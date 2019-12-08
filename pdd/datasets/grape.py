@@ -10,7 +10,7 @@ import numpy as np
 import sys
 
 
-def load_data(path='crops_nn.tar', origin="http://pdd.jinr.ru/crops_nn.tar", 
+def load_data(path='tomato.zip', origin="kaggle datasets download -d noulam/tomato", 
               split_on_train_test=False, 
               test_size=None, 
               random_state=0):
@@ -26,7 +26,7 @@ def load_data(path='crops_nn.tar', origin="http://pdd.jinr.ru/crops_nn.tar",
     """
     path = get_file(path,
                     origin,
-                    file_hash='cbc74aef6e5f20ef22b41d1f0f77e40567e6fd1f4e2c007341df9fb4672c3fd8',
+                    file_hash='eaf0980f4a97514216cc5b465b712a19',
                     extract=True)
 
     try:
